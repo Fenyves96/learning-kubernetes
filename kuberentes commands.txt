@@ -1,0 +1,6 @@
+kubectl get namespaces
+
+kubectl apply -f namespaces.yaml
+kubectl delete -f namespaces.yaml
+
+
