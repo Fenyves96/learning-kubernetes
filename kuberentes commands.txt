@@ -3,4 +3,12 @@ kubectl get namespaces
 kubectl apply -f namespaces.yaml
 kubectl delete -f namespaces.yaml
 
+#set namespace for current context
+kubectl config set-context --current --namespace=<namespace-name>
 
+#list pods
+kubectl get pods
+
+
+
+kubectl describe pod-info-deployment-68c8476764-hkwpr -n development
