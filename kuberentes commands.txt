@@ -12,4 +12,3 @@ kubectl get pods -n development
 
 #describe a pod to check pods status
 kubectl describe pods/pod-info-deployment-68c8476764-hkwpr -n development
-e
