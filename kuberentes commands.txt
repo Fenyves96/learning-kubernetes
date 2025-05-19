@@ -6,9 +6,10 @@ kubectl delete -f namespaces.yaml
 #set namespace for current context
 kubectl config set-context --current --namespace=<namespace-name>
 
-#list pods
-kubectl get pods
+#list pods in development namespace
+kubectl get pods -n development
 
 
-
-kubectl describe pod-info-deployment-68c8476764-hkwpr -n development
+#describe a pod to check pods status
+kubectl describe pods/pod-info-deployment-68c8476764-hkwpr -n development
+e
