@@ -12,3 +12,6 @@ kubectl get pods -n development
 
 #describe a pod to check pods status
 kubectl describe pods/pod-info-deployment-68c8476764-hkwpr -n development
+
+#get access to pod's shell (it means interactive terminal) (-- indicate the start of the script you want to run)
+kubectl exec -it busybox-74b7c48b46-mw2hs -- /bin/sh
