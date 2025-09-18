@@ -23,3 +23,10 @@ kubectl config get-contexts
 kubectl config use-context tua-kubernetes
 
 kubectl get pod process-controller-648c56b4bb-kwrsg -n bm-process-monitoring -o jsonpath='{.spec.containers[?(@.name=="<container-name>")].image}'
+
+create new deployment:
+kubectl create deployment --dry-run=client --image localhost:5000/explorecalifornia.com explorecalifornia.com --output=yaml > deployment.yaml
+
+port-forward:
+kubectl get pods
+kubectl port-forward pod/cp-schema-registry-76676b4596-ngr6g 8081:8081 -n <namespace>
