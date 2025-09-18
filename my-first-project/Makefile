@@ -69,4 +69,7 @@ create_ingress:
 deploy_ingress_controller:
 	kubectl apply -f https://raw.githubusercontent.com/kubernetes/ingress-nginx/main/deploy/static/provider/kind/deploy.yaml
 
+helm_show_chart:
+	helm show all ./chart
+
    
